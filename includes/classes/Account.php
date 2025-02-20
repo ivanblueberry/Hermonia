@@ -3,7 +3,7 @@
         private $errorArray;
 
         public function __construct(){
-            $his->errorArray = array();
+            $this->errorArray = array();
         }
 
         public function register($un, $fn, $ln, $em, $em2, $pw, $pw2){
@@ -55,6 +55,6 @@
                 array_push($this->errorArray, "Your passwords don't match");
                 return;
             }
-            
         }
+    }
 ?>
